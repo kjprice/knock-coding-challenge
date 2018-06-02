@@ -1,5 +1,5 @@
 const expect = require('chai').expect;
-const { mergeStrings } = require('../src/merge-strings');
+const { mergeStrings } = require('../src/helpers/merge-strings');
 
 describe('Merge Strings', () => {
   it('should merge two strings - extras should be appened to end', () => {

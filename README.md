@@ -26,7 +26,7 @@ npm test
 ```
 
 ### Merge strings
-A [simple function](src/merge-strings.js) was written to merge strings. A [test](test/merge-strings.js) was written to accompany the function.
+A [simple function](src/helpers/merge-strings.js) was written to merge strings. A [test](test/merge-strings.js) was written to accompany the function.
 
 ## General Notes
 
