@@ -16,3 +16,18 @@ Based on gist for [Knock Backend Node Developer Questions](https://gist.github.c
 
 > Knock appears to be at the forefront of disrupting the antiquated business model of real estate. I think there's plenty more to be done. I see an extremely talented team of data scientists, engineers, and real estate people; I would be honored to learn from the team and contrbiute what I know as well.
 
+## Coding Challenge
+
+To run all the tests, run the following:
+
+```
+npm install
+npm test
+```
+
+### Merge strings
+A [simple function](src/merge-strings.js) was written to merge strings. A [test](test/merge-strings.js) was written to accompany the function.
+
+## General Notes
+
+I would generally ran eslint and verify my work before letting other people view my code.

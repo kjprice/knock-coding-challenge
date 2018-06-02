@@ -1,0 +1,23 @@
+{
+  "name": "knock-coding-challenge",
+  "version": "1.0.0",
+  "description": "Based on gist for [Knock Backend Node Developer Questions](https://gist.github.com/particlebanana/4124568ddf18110376ed22d9cf378127).",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/mocha/bin/mocha -c --recursive --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kjprice/knock-coding-challenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kjprice/knock-coding-challenge/issues"
+  },
+  "homepage": "https://github.com/kjprice/knock-coding-challenge#readme",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0"
+  }
+}
