@@ -18,10 +18,18 @@ Based on gist for [Knock Backend Node Developer Questions](https://gist.github.c
 
 ## Coding Challenge
 
-To run all the tests, run the following:
-
+To run all the tests, first install dependencies:
 ```
 npm install
+```
+
+To make sure the API tests run, in a new terminal, be sure to run:
+```
+npm run start-dev-server
+```
+
+In another terminal, run the scripts:
+```
 npm test
 ```
 

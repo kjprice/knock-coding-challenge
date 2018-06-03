@@ -5,7 +5,8 @@
   "main": "src/server.js",
   "scripts": {
     "test": "node_modules/mocha/bin/mocha -c --recursive --watch",
-    "eslint": "./node_modules/.bin/eslint .; exit 0"
+    "eslint": "./node_modules/.bin/eslint .; exit 0",
+    "start-dev-server": "nodemon src/server.js"
   },
   "repository": {
     "type": "git",
@@ -18,9 +19,11 @@
   },
   "homepage": "https://github.com/kjprice/knock-coding-challenge#readme",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "chai": "^4.1.2",
     "express": "^4.16.3",
-    "mocha": "^5.2.0"
+    "mocha": "^5.2.0",
+    "request-promise": "^4.2.2"
   },
   "devDependencies": {
     "eslint": "^4.19.1",

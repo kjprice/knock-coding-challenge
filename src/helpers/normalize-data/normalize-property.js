@@ -80,7 +80,7 @@ function getListPrice(homeRecord) {
 
   if (listPrice) {
     // remove non-numerical values
-    const cleanedListPrice = listPrice.replace(/[^0-9]/g, '');
+    const cleanedListPrice = listPrice.replace(/[^0-9.]/g, '');
 
     return parseInt(cleanedListPrice, 10);
   }
