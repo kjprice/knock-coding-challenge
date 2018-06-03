@@ -1,3 +1,8 @@
+function isDateValid(date) {
+  const dateObject = new Date(date);
+  return dateObject.getTime() !== 'NaN';
+}
+
 // This would ideally be done on some sort of ORM
 function validateCustomerProperty(customerProperty) {
   const expectedFields = {
@@ -32,6 +37,7 @@ function validateCustomerProperty(customerProperty) {
     list_date: {
       type: 'number',
       required: true,
+      date: true,
     },
     bedrooms: {
       type: 'number',
@@ -50,7 +56,7 @@ function validateCustomerProperty(customerProperty) {
   const errors = [];
 
   Object.keys(expectedFields).forEach((key) => {
-    const { type: expectedType, required = false } = expectedFields[key];
+    const { type: expectedType, required = false, date = false } = expectedFields[key];
     if (!(key in customerProperty)) {
       if (required) {
         errors.push(`${key} is required`);
@@ -64,6 +70,11 @@ function validateCustomerProperty(customerProperty) {
 
     if ((actualType !== expectedType)) {
       errors.push(`Expected ${key} to be a ${expectedType}`);
+      return;
+    }
+
+    if (date && !isDateValid(date)) {
+      errors.push(`Expected ${key} to be valid date but instead saw ${date}`);
     }
   });
 
