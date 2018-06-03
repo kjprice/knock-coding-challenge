@@ -39,3 +39,5 @@ A [simple function](src/helpers/merge-strings.js) was written to merge strings. 
 ### Transformation Function
 A [function](src/helpers/normalize-data/normalize-property.js) is created to normalize any incoming mls data to a format that our API accepts. [Tests](test/normalize-home-record.js) have been created.
 
+I have also created a [little server](src/server.js) that will serve as the pretend CRM endpoint.
+
