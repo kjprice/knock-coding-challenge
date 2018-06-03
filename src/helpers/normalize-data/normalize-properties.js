@@ -1,3 +1,4 @@
+/* eslint no-multi-spaces: 0 */
 function getMlsName(homeRecord) {
   return homeRecord.data_name;
 }
@@ -108,21 +109,21 @@ function getSize(homeRecord) {
 }
 
 function normalizeProperty(homeRecord) {
-  const normalizedProperty = {};
-  normalizedProperty.mls_name = getMlsName(homeRecord);
-  normalizedProperty.mls_id = getMlsId(homeRecord);
-  normalizedProperty.street_address = getStreetAddress(homeRecord);
-  normalizedProperty.city = getCity(homeRecord);
-  normalizedProperty.state = getState(homeRecord);
-  normalizedProperty.zip_code = getZip(homeRecord);
-  normalizedProperty.list_price = getListPrice(homeRecord);
-  normalizedProperty.list_date = getListDate(homeRecord);
-  normalizedProperty.bedrooms = getBedrooms(homeRecord);
-  normalizedProperty.full_baths = getBaths(homeRecord);
-  normalizedProperty.half_baths = getHalfBaths(homeRecord);
-  normalizedProperty.size = getSize(homeRecord);
+  const property          = {};
+  property.mls_name       = getMlsName(homeRecord);
+  property.mls_id         = getMlsId(homeRecord);
+  property.street_address = getStreetAddress(homeRecord);
+  property.city           = getCity(homeRecord);
+  property.state          = getState(homeRecord);
+  property.zip_code       = getZip(homeRecord);
+  property.list_price     = getListPrice(homeRecord);
+  property.list_date      = getListDate(homeRecord);
+  property.bedrooms       = getBedrooms(homeRecord);
+  property.full_baths     = getBaths(homeRecord);
+  property.half_baths     = getHalfBaths(homeRecord);
+  property.size           = getSize(homeRecord);
 
-  return normalizedProperty;
+  return property;
 }
 
 module.exports.normalizeProperty = normalizeProperty;
