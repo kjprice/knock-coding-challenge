@@ -29,4 +29,5 @@ npm test
 A [simple function](src/helpers/merge-strings.js) was written to merge strings. A [test](test/merge-strings.js) was written to accompany the function.
 
 ### Transformation Function
+A [function](src/helpers/normalize-data/normalize-property.js) is created to normalize any incoming mls data to a format that our API accepts. [Tests](test/normalize-home-record.js) have been created.
 
