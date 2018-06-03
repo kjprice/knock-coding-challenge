@@ -5,13 +5,13 @@ function mergeStrings(string1, string2) {
 
   const mergeStringArray = [];
   // iterate until all of the characters of the shortest string have been used
-  for (let i = 0; i < shortestString.length; i++) {
+  for (let i = 0; i < shortestString.length; i += 1) {
     mergeStringArray.push(string1[i], string2[i]);
   }
 
   return mergeStringArray
-  .concat(charactersLeftOver)
-  .join('');
+    .concat(charactersLeftOver)
+    .join('');
 }
 
 module.exports.mergeStrings = mergeStrings;

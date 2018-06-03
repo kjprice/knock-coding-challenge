@@ -2,9 +2,10 @@
   "name": "knock-coding-challenge",
   "version": "1.0.0",
   "description": "Based on gist for [Knock Backend Node Developer Questions](https://gist.github.com/particlebanana/4124568ddf18110376ed22d9cf378127).",
-  "main": "index.js",
+  "main": "src/server.js",
   "scripts": {
-    "test": "node_modules/mocha/bin/mocha -c --recursive --watch"
+    "test": "node_modules/mocha/bin/mocha -c --recursive --watch",
+    "eslint": "./node_modules/.bin/eslint .; exit 0"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,12 @@
   "homepage": "https://github.com/kjprice/knock-coding-challenge#readme",
   "dependencies": {
     "chai": "^4.1.2",
+    "express": "^4.16.3",
     "mocha": "^5.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.12.0"
   }
 }
